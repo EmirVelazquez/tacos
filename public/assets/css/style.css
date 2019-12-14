@@ -15,15 +15,23 @@
   padding: 3px;
 }
 
-/* .tacoRow {
-  background-color: skyblue;
-} */
+.tacoRow {
+  padding-left: 50px;
+}
 
 .tacosDevoured {
   list-style: none;
 }
 
-/* .list-group-item {
-  display: list-item;
-  list-style-type: disc;
-} */
+.container {
+  border: 10px solid #000000;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  background: linear-gradient(180deg, #90d1f5, #cbf1ba);
+}
+
+.cartaNumero {
+  font-size: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+}
