@@ -1,8 +1,12 @@
-<li>
-    {{taco_name}}
-
-    <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-        {{#unless devoured}}Devour!{{/unless}}
-    </button>
-
-</li>
+<div class="row">
+    <div class="col-sm-12 tacoRow">
+        <li>
+            {{taco_name}}
+            {{#unless devoured}}
+            <button class="change-devoured btn btn-outline-dark" data-id="{{id}}" data-newdevoured="true">
+                {{#unless devoured}}Devour!{{/unless}}
+            </button>
+            {{/unless}}
+        </li>
+    </div>
+</div>

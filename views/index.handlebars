@@ -5,18 +5,18 @@
 </div>
 <div class="row">
     <div class="col-sm-6">
-        <h2>Tacos Ordered!</h2>
-        <ul>
+        <h2 class="tacoHeader">Tacos Ordered!</h2>
+        <ol class="list-group">
             {{#each tacos}}
             {{#unless devoured}}
             {{> tacos/tacoBlock devoured=false}}
             {{/unless}}
             {{/each}}
-        </ul>
+        </ol>
     </div>
-    <div class-"col-sm-6">
-        <h2>Tacos Devoured!</h2>
-        <ul>
+    <div class="col-sm-6">
+        <h2 class="tacoHeader">Tacos Devoured!</h2>
+        <ul class="tacosDevoured">
             {{#each tacos}}
             {{#if devoured}}
             {{> tacos/tacoBlock devoured=true}}
@@ -25,14 +25,25 @@
         </ul>
     </div>
 </div>
-
-<h2>Order another Taco!</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="ca">Type of Taco:</label>
-        <input type="text" id="ca" name="name">
+<div class="row">
+    <div class="col-sm-12">
+        <h2 class="tacoHeader">Order another Taco!</h2>
     </div>
+</div>
+<div class="form-row">
+    <div class="col-sm-6">
+        <form class="newTacoForm">
+            <div class="form-group">
 
-    <button type="submit">Place Order</button>
-</form>
+                <label for="typeTaco">Type of Taco:</label>
+                <input class="form-control" type="text" id="typeTaco" name="name"></input>
+                <small id="masterPiece" class="form-text text-muted">Create a masterpiece, we don't judge a person by
+                    their
+                    taste
+                    preferences.</small>
+            </div>
+
+            <button type="submit" class="btn btn-outline-dark">Place Order</button>
+        </form>
+    </div>
+</div>
