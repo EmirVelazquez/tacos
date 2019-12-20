@@ -48,5 +48,6 @@ body {
   font-family: 'Roboto', sans-serif;
   background-image: url("/assets/img/cookingBoard.jpg");
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  /* background-attachment: scroll; */
+  background-size: cover;
 }
