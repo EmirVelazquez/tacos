@@ -4,18 +4,16 @@ Created a taco order logger for a mock taqueria that utilizes MySQL, Node, Expre
 
 ## Technologies Used
 
-* Javascript
-* Node.js
-* NPM's
-    - dotenv
-    - express
-    - express-handlebars
-    - mysql
-* Git
-* Heroku
-    - Deployed
-    - JAWSDB
-* ORM
+- Javascript
+- jQuery
+- HTML
+- CSS
+- Bootstrap
+- MySQL
+- Node.js
+- Express.js
+- .env
+- Handlebars
 
 ## Details of Taco Logger
 
